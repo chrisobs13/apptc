@@ -1,5 +1,8 @@
 @import "base/typography";
 
+$dk: #353459;
+$lt: #ECF2E4;
+
 html,body {
   margin: 0;
   padding: 0;
@@ -7,7 +10,7 @@ html,body {
 
 body {
   font-size: 16px;
-  background: #ddd;
+  background: $lt;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -20,7 +23,7 @@ h3,h4,h4,h5,h6 {
 }
 
 header {
-  background: #333;
+  background: $dk;
   color: #fff;
   padding: 1.5rem;
 }
@@ -36,21 +39,43 @@ main > div {
 
 .intro {
   display: flex;
-  background: #fff;
   padding: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  
+  h2 {
+    flex: 0 0 60%;
+    margin-left: 5%;
+  }
+  
+  figure {
+    height: auto;
+    flex: 0 0 35%;
+    margin: 0;
+    padding: 0;
+    img {
+      border-radius: 100%;
+      width: 100%;
+      max-width: 100%;
+      border: 2px solid $dk;
+      padding: 1px;
+    }
+  }  
+
   
   h3 {
     padding: 0;
     font-weight: normal;
     font-size: 1rem;
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: column;
     
   }
   h3 span {
-    display: block;
-    padding-bottom: .25rem;   
+    flex: 1 1 100%;
+    border-left: 2px solid darken($lt,20%);
+    padding: 1rem .5rem;
   }
   
-  h3 span::before {
-    content:'•';
-  }
 }
