@@ -13,7 +13,7 @@ html,body {
 
 body {
   font-family: 'Source Serif Pro', serif;
-  font-weight: 400;  
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   background: $dk;
@@ -29,7 +29,7 @@ body {
 .wrapper {
   margin: 0 auto;
   width: 92%;
-  max-width: $screen-lg;  
+  max-width: $screen-lg;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -45,15 +45,15 @@ h3,h4,h4,h5,h6 {
   font-size: 1.6rem;
 }
 
-header {  
+header {
   padding: 2rem;
   text-align: center;
   color: #fff;
 
   span {
     display: inline-block;
-  }  
-  
+  }
+
 }
 
 header h1 {
@@ -72,15 +72,15 @@ header h1 {
     color: #fff;
     text-decoration: none;
   }
-  
+
   span {
     display: block;
     font-weight: 400;
   }
-  
+
   @media only screen and (min-width: $screen-lg) {
     font-size: 2rem;
-  }    
+  }
 
 }
 
@@ -92,7 +92,7 @@ header h2 {
   padding: 0;
   @media only screen and (min-width: $screen-lg) {
     font-size: 1.6rem;
-  }    
+  }
 }
 
 
@@ -102,19 +102,19 @@ main {
   border-radius: 5px;
   @media only screen and (min-width: $screen-sm) {
     padding: 0 0 3rem 0;
-  }    
-  
+  }
+
   @media only screen and (min-width: $screen-lg) {
     padding: 0 0 4rem 0;
-  }  
-  
+  }
+
 }
 
 
 main > section {
   padding: 1.5rem;
   margin: 0;
-  
+
   h4,h5 {
     &:after {
       content:"";
@@ -133,7 +133,7 @@ main > section {
     padding: 0 4.5rem;
   }
 
-  
+
   p {
     //max-width: 800px;
   }
@@ -150,7 +150,7 @@ main > section {
       //outline: 1px solid red;
       //border-top: 1px solid $lt;
     }
-    
+
     @media only screen and (min-width: $screen-sm){
       columns: 2;
       column-gap: 3rem;
@@ -161,7 +161,7 @@ main > section {
 }
 
 .intro {
-  
+
   text-align: center;
   background: lighten($dk,55%);
   border-radius: 5px 5px 0 0;
@@ -178,7 +178,7 @@ main > section {
       padding: 1px;
     }
   }
-  
+
   h3 {
     padding: 0;
     font-weight: normal;
@@ -186,25 +186,25 @@ main > section {
 
 
   }
-  
+
   h3 span {
     display: block;
     //text-align: center;
     //border-top: 1px solid $lt;
     font-weight: bold;
-    
+
 
     //padding: 1rem .5rem;
   }
-  
+
   @media only screen and (min-width: $screen-sm) {
-    
+
     display: flex;
     align-items: center;
     text-align: left;
     padding: 2rem 4rem;
     margin-bottom: 2rem;
-    
+
     div {
       flex: 1 1 auto;
       margin-left: 3rem;
@@ -224,7 +224,7 @@ main > section {
     strong {
       margin-right: 8px;
     }
-    
+
     @media only screen and (min-width: $screen-sm) {
       display: inline-block;
       padding: .5rem;
@@ -235,9 +235,9 @@ main > section {
     margin: 1rem 0 .5rem 0;
     padding: 0;
   }
-  
+
   a {
     color: #fff;
     text-decoration: none;
-  }  
+  }
 }
